@@ -73,7 +73,7 @@ pub extern "C" fn free_string(p: *mut c_char) {
 }
 
 pub(crate) fn main() {
-    let path = r"%USERPROFILE%\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\config.toml";
+    let path = r"config.toml";
     let rt = tokio::runtime::Runtime::new().unwrap();
 
     rt.block_on(async {
